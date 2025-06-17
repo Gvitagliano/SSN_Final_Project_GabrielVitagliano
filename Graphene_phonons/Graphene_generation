@@ -1,0 +1,10 @@
+import sisl
+from sisl import *
+import sisl.viz
+
+# Create a graphene structure with the default parameters.
+graphene = sisl.geom.graphene()
+# Plot it to see that it is what we wanted
+graphene.plot(axes="x,y")
+
+graphene.write("structure.fdf")
